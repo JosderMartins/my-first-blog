@@ -1,0 +1,32 @@
+criar um ambiente virtual:
+
+na pasta my-first-blog: digite $ python3 -m venv venv
+
+
+para ativar o ambiente virtual: $ source venv/bin/activate
+
+
+depois instale os programas no requeriments.txt: 
+$ pip install -r requeriments.txt
+
+
+inicie o banco de dados:
+
+$ python manage.py migrate
+$ python manage.py makemigrations blog
+$ python manage.py migrate blog
+
+
+crie um super usuário:
+python manage.py createsuperuser
+
+para rodar digite:
+$ python manage.py runserver
+
+
+logue com o super usuário criado.
+http://127.0.0.1:8000/admin
+
+depois volte para a pagina principal para adicionar ou editar postagens:
+http://127.0.0.1:8000/
+
